@@ -1,10 +1,12 @@
 import React from 'react';
+import Spinner from '../Spinner/Spinner';
 import CountUp from 'react-countup';
 import { CardContent, Card, Grid, Typography } from '@material-ui/core';
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   if (!confirmed) {
-    return 'Loading..!';
+    // return "Loading..!";
+    return <Spinner />;
   }
   return (
     <Grid container spacing={3} justify='center' className='cards'>

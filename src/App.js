@@ -4,6 +4,7 @@ import Cards from './components/Cards/Cards';
 import CountryPicker from './components/CountryPicker/CountryPicker';
 import Chart from './components/Chart/Chart';
 import { fetchData } from './components/API';
+import { red } from '@material-ui/core/colors';
 
 class App extends Component {
   state = {
@@ -36,6 +37,9 @@ class App extends Component {
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
+        <footer>
+          <p style ={{padding: '20px 5px'}} >Made with &#10084; by Kirankumar Gonti</p>
+        </footer>
       </div>
     );
   }
