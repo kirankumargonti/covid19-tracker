@@ -1,4 +1,4 @@
-# **A Corona Tracking Appliction**
+# **A Corona Tracking Application**
 
 **Live Project:** https://kirankumargonti.github.io/covid19-tracker/
 
